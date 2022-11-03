@@ -4,25 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Hero/Favourite</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-
+    <link rel = "stylesheet" type = "text/css" href = "styleIndex.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Belgrano&family=Comforter+Brush&family=Dancing+Script:wght@500&family=Dawning+of+a+New+Day&family=Lobster&family=Fuzzy+Bubbles&family=Pacifico&family=Sedgwick+Ave&family=Satisfy&family=PT+Mono&display=swap" rel="stylesheet">
+    
+    <title>Superheroes</title>
+    <script src="https://kit.fontawesome.com/c4d008f503.js" crossorigin="anonymous"></script>
+    <script src = "scriptIndex.js" defer></script>
 </head>
-<body>  
-     <h1 >Super Hero Hunter</h1>
-    <marquee id="marq" style="width: 80%; color: rgb(4, 245, 145);font-size: 3rem;  font-weight: bold; scroll-behavior: 12;" scrollamount="20">Welcome to super hero's web page</marquee>
-    <div id="navbar">
-      <nav class="navbar bg-light">
-        <div class="container-fluid">
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search your favourite charecter" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search" ></i> Search</button>
-            <button class="btn btn-outline-success" type="submit"><i class="bi bi-search"></i> <a href="file:///C:/Users/ADMIN/Desktop/superHero%20by%20me/favourite.html" class="fav" id="favBtn">Favourite</a></button>
-          </form>
-        </div>
-      </nav>
+<body>
+   
+   
+    <div id = "header-top">
+        <span id = "welcome"> Welcome to the Superheroes Universe ! </span>
+        <span id = "fav"> <a href = "favouritesuperHeroes.html" > Favourites <i class="far fa-heart"></i> </a> </span>
     </div>
-      <script src="index.js"></script>
+    <div id = "container">
+        <h2 onclick="this.innerHTML='This project is created by Aj Rathore'">Creater</h2>
+        <span id = "heading" >
+            Superheroes' Hunter 
+        </span>
+        <span id = "info">
+            Your one spot app to get the data of all the Superheroes and Villains in the Universe!
+        </span>
+        <div id = "searchHeroBar">
+            <input type = "text" name = "searchHero" id = "searchHero" placeholder="Type Supehero's Name (example : Superman) ">  
+        </div>
+        <div id = "displayHeroSearchResults">
+
+        </div>
+    </div>
+
+    
 </body>
 </html>
